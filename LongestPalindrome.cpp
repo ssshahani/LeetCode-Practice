@@ -13,6 +13,7 @@
 using namespace std;
 bool checkPalidrome(string s);
 
+//Function to check if string is Palindrom for all permutations
 bool checkPalidrome(string s){
     bool flag = true;
     int l = 0,h = s.length() - 1;
@@ -26,7 +27,7 @@ bool checkPalidrome(string s){
     }
     return flag;
 }
-//BruteForce
+//BruteForce: This algorithm has complexity O(N^3) 
 string longestPalindrome_BruteForce(string s) {
     int len = s.length();
 
